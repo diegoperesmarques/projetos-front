@@ -9,10 +9,32 @@
     <link rel="stylesheet" href="assets/bibliotecas/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/sb-admin.min.css">
 </head>
-<body>
-    <h1>Olá mundo</h1>
+<body class = "bg-dark">
+    <!-- Início da navegação -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <a class = "navbar-brand" href="index.html">Admin Curso</a>
+        <button class = "navbar-toggler navbar-toggler-right" type = "button" 
+        data-toggle = "collapse" data-target = "#navbarCurso"
+        aria-control = "navbarCurso" aria-expanded = "false" aria-label = "Navegação Toggle">
+        <span class = "navbar-toggler-icon"></span>
+        </button>
+
+        <div id = "navbarCurso" class = "collapse navbar-collapse">
+            <ul class = "navbar-nav navbar-sidenav">
+                <li class = "nav-item">
+                <a href = "#" class = "nav-link">
+                    <i class = "fa fa-fw fa-dashboard"></i>
+                    <span class = "nav-link-text">Dashboard</span>
+                </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Final da navegação -->
+
     <script src = "assets/bibliotecas/jquery/jquery.min.js"></script>
     <script src = "assets/bibliotecas/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src = "assets/bibliotecas/jquery-easing/jquery.easing.min.js"></script>
+    <script src="assets/js/sb-admin.min.js"></script>
 </body>
 </html>
