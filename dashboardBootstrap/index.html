@@ -20,7 +20,7 @@
         </button>
 
         <div id = "navbarCurso" class = "collapse navbar-collapse">
-            <ul class = "navbar-nav navbar-sidenav">
+            <ul class = "navbar-nav navbar-sidenav" id = "linksAccordion">
                 <li class = "nav-item" data-toggle = "tooltip" data-placement = "right">
                 <a href = "#" class = "nav-link">
                     <i class = "fa fa-fw fa-dashboard"></i>
@@ -36,17 +36,62 @@
                 </li>
 
                 <li class = "nav-item" data-toggle = "tooltip" data-placement = "right">
-                    <a href = "#" class = "nav-link">
+                    <a href = "#linksComp" class = "nav-link nav-link-collapse collapse"
+                    data-toggle = "collapse" data-parent = "#linksAccordion">
                         <i class = "fa fa-fw fa-wrench"></i>
                         <span class = "nav-link-text">Componentes</span>
                     </a>
+
+                    <ul class = "sidenav-second-level collapse" id = "linksComp">
+                        <li>
+                            <a href="#">Manuais</a>
+                        </li>
+
+                        <li>
+                            <a href="#">POP</a>
+                        </li>
+
+                        <li>
+                            <a href="#linksOutros" class = "nav-link-collapse collapse"
+                            data-toggle = "collapse">Outros</a>
+                            <ul class = "sidenav-third-level collapse" id = "linksOutros">
+                                <li>
+                                    <a href="#">Norma Técnica</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">Fluxograma</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">Organograma</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
                 </li>
 
                 <li class = "nav-item" data-toggle = "tooltip" data-placement = "right">
-                    <a href = "#" class = "nav-link">
+                    <a href = "#linksPage" class = "nav-link nav-link-collapse collapse"
+                    data-toggle = "collapse" data-parent = "#linksAccordion">
                         <i class = "fa fa-fw fa-file"></i>
                         <span class = "nav-link-text">Páginas</span>
                     </a>
+
+                    <ul class="sidenav-second-level collapse" id = "linksPage">
+                        <li>
+                            <a href="login.html">Login</a>
+                        </li>
+
+                        <li>
+                            <a href="recuperar.html">Recuperar Senha</a>
+                        </li>
+
+                        <li>
+                            <a href="registro.html">Cadastrar-se</a>
+                        </li>
+                    </ul>
+
                 </li>
             </ul>
 
