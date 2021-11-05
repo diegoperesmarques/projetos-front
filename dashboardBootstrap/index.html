@@ -105,6 +105,62 @@
 
         <!-- Início pesquisa e sair -->
         <ul class = "navbar-nav ml-auto">
+
+        <!-- Início grupo mensagem -->
+            <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle mr-lg-2" 
+                id = "messagesDropdown" data-toggle = "dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                <i class = "fa fa-fw fa-envelope"></i>
+                <span class="d-lg-none"> <!-- Aparecer apenas em dispositivos pequenos -->
+                    Mensagens 
+                    <span class = "badge badge-pill badge-primary">12 novas</span> 
+                </span>
+                    <!-- Círculo acima da mensagem -->
+                    <span class="indicator text-primary d-none d-lg-block">
+                        <i class="fa fa-fw fa-circle"></i>
+                    </span>
+            </a>
+
+            <!-- Início mensagem -->
+            <div class = "dropdown-menu" aria-labelledby = "messagesDropdown">
+                <h6 class="dropdown-header">Novas mensagens</h6>
+                <div class="dropdown-divider"></div>
+
+                <a href="#" class="dropdown-item">
+                    <strong>Diego Peres</strong>
+                    <span class="small float-right text-muted">10:10</span>
+                    <div class="dropdown-message small">
+                        Primeira mensagem do sistema
+                    </div>
+                    <div class="dropdown-divider"></div>
+                </a>
+
+                <a href="#" class="dropdown-item">
+                    <strong>Aluno</strong>
+                    <span class="small float-right text-muted">11:10</span>
+                    <div class="dropdown-message small">
+                        Dúvida na aula 10 - sobre o processo de acoplagem 
+                    </div>
+                    <div class="dropdown-divider"></div>
+                </a>
+                
+                <a href="#" class="dropdown-item">
+                    <strong>Professor</strong>
+                    <span class="small float-right text-muted">18:10</span>
+                    <div class="dropdown-message small">
+                        Computador quebrado na sala 03
+                    </div>
+                    <div class="dropdown-divider"></div>
+
+                    <a href="#" class="dropdown-item small">Ver todas mensagens</a>
+                </a>
+            </div>
+            <!-- Fim mensagem -->
+
+            </li>
+            <!-- Fim grupo mensagem -->
+
             <li class="nav-item">
                 <form action="" class="form-inline my-2 my-lg-0 mr-lg-2">
                     <input type="text" class="form-control" placeholder = "Pesquisar por...">
