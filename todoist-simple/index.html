@@ -9,7 +9,7 @@
     <script src="js/script.js" defer></script>
 </head>
 <body>
-    <h1>TODO</h1>
+    <!-- <h1>TODO</h1> -->
 
     <div class="todo-container">
         <header>
@@ -26,7 +26,7 @@
             </div>
         </form>
 
-        <form id="edit-form">
+        <form id="edit-form" class="hide">
             <p>Edite a sua tarefa: </p>
             <div class="form-control">
                 <input type="text" id="edit-input">
@@ -38,7 +38,7 @@
             <button id="cancel-edit-btn">Cancelar</button>
         </form>
 
-        <div id="tollbar">
+        <div id="toolbar">
             <div id="search">
                 <h4>Pesquisar:</h4>
                 <form>
@@ -48,16 +48,18 @@
                     </button>
                 </form>
             </div>
+
+            <div id="filter">
+                <h4>Filtrar:</h4>
+                <select id="filter-select">
+                    <option value="all">Todos</option>
+                    <option value="done">Feitos</option>
+                    <option value="todo">A fazer</option>
+                </select>
+            </div>
         </div>
 
-        <div id="filter">
-            <h4>Filtrar:</h4>
-            <select id="filter-select">
-                <option value="all">Todos</option>
-                <option value="done">Feitos</option>
-                <option value="todo">A fazer</option>
-            </select>
-        </div>
+
 
         <div id="todo-list">
             <div class="todo">
