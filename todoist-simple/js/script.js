@@ -54,3 +54,20 @@ todoForm.addEventListener("submit", (e) => {
     }
 
 });
+
+
+document.addEventListener("click", (e) => {
+    const targetEl = e.target; 
+    const parentEl = targetEl.closest("div");
+
+    //Adicionar tarefas
+    if(targetEl.classList.contains("finish-todo")) {
+        parentEl.classList.toggle("done")
+    }
+
+    //Remover tarefas
+    if(targetEl.classList.contains("remove-todo")) {
+        parentEl.remove();
+    }
+
+});
